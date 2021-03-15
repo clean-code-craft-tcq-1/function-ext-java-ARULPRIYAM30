@@ -11,11 +11,11 @@ public class BatteryCheckSystem {
     }
 	
     public static void main(String[] args) {
-    	
+    	SwitchLanguage.setLanguageInSystem("EN");
     	assert(SwitchLanguage.setLanguageInSystem("EN")==true);
     	assert(batteryTest(-3, -15, 0.7f)==false);
       	assert(batteryTest(44, 79, 0.7f)==true);
-		BatteryLimit limit = new BatteryLimit();
+	BatteryLimit limit = new BatteryLimit();
     	assert(limit.setTemperatureUnit("Fahrenheit")==true);
        	assert(batteryTest(140, 60, 0.6f) == false);
        	assert(batteryTest(25, 70, 0.7f) == true);
