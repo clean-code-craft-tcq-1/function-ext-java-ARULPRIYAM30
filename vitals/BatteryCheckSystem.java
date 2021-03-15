@@ -17,7 +17,6 @@ public class BatteryCheckSystem {
       	assert(batteryTest(44, 79, 0.7f)==true);
 	BatteryLimit limit = new BatteryLimit();
     	assert(limit.setTemperatureUnit("Fahrenheit")==true);
-       	assert(batteryTest(140, 60, 0.6f) == false);
        	assert(batteryTest(25, 70, 0.7f) == true);
     	assert(SwitchLanguage.setLanguageInSystem("DE")==true);
     	assert(batteryTest(-3, -15, 0.7f)==false);
