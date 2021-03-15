@@ -1,4 +1,3 @@
-# Programming Paradigms
 
 Electric Vehicles have BMS - Battery Management Systems
 
@@ -14,40 +13,23 @@ Electric Vehicles have BMS - Battery Management Systems
 
 ## Possible purpose
 
-- Protect batteries while charging:
-at home, in public place, within vehicle / regenerative braking
-- Estimate life, inventory and supply chains
+Extension 1: Early Warning for Check in Temperature, SOC, Charge Breach
+Extension 2: Support a language in addition to English i.e. ENG, DE
 
-## The Starting Point
 
-We will explore the charging phase of Li-ion batteries to start with.
-
-## Issues
-
-- The code here has high complexity in a single function.
-- The tests are not complete - they do not cover all the needs of a consumer
 
 ## Tasks
 
-1. Reduce the cyclomatic complexity.
-1. Separate pure functions from I/O
-1. Avoid duplication - functions that do nearly the same thing
-1. Complete the tests - cover all conditions.
-1. To take effective action, we need to know
-the abnormal measure and the breach -
-whether high or low. Add this capability.
+Changes done
 
-## The Exploration
+    Added language feature
+    Reduced cyclomatic complexity
+    Added warning feature
+    Added temperature scale
+    Separate pure functions from I/O
+    Avoided duplication
+    Completed the test condition.
 
-How well does our code hold-out in the rapidly evolving EV space?
-Can we add new functionality without disturbing the old?
-
-## The Landscape
-
-- Limits may change based on new research
-- Technology changes due to obsolescence
-- Sensors may be from different vendors with different accuracy
-- Predicting the future requires Astrology!
 
 ## Keep it Simple
 
