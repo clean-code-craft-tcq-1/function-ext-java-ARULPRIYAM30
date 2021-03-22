@@ -26,10 +26,7 @@ public class BatteryCheckSystem {
 		assert (SwitchLanguage.setLanguageInSystem(Locale.ENGLISH) == true);
 		assert (batteryTest(-3, -15, 0.7f) == false);
 		assert (batteryTest(44, 79, 0.7f) == true);
-		SwitchLanguage.setLanguageInSystem(Locale.ENGLISH);
-		batteryTest(-3, -15, 0.7f);
-		/*batteryTest(44, 79, 0.7f);
-		batteryTest(24, 55, 0.4f);*/
+		
 	}
 }
 
